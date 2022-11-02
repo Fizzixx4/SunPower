@@ -1,0 +1,87 @@
+footer{
+    background-color: #2C3E4A;
+    color: #FFFFFF;
+    width: 100%;
+}
+
+.footer_block{
+    margin: 15px;
+    text-align: center;
+}
+
+.footer_p {
+    font-size: 11px;
+}
+
+/* BLOC GAUCHE "CONTACT" */
+#footer_subtitle {
+    font-weight: bold;
+}
+
+/* BLOC CENTRAL : RESEAUX SOCIAUX */
+#footer_title{
+    font-size: 14px;
+}
+
+.footer_icon{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+  
+/* FORMATAGE CERCLE/ICON */
+.icon {
+    margin: 0 10px;
+    padding: 0 8px;
+    background-color: #31B86B;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: ease-in-out 0.5s;
+}
+
+.icon:hover{
+    transform: rotate(180deg);
+}
+
+/* BLOC DROIT : MENTIONS LEGALES */
+#footer_link{
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+}
+
+
+/* ------------------RESPONSIVE------------------ */
+@media (min-width: 650px) {
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    footer > * {
+        width : 25%;
+    }
+
+    #footer_title {
+        font-size: 15px;
+    }
+
+    .footer_block--secondary {
+        padding: 0 50px;
+        border-left: solid 1px;
+        border-right: solid 1px;
+        border-color: #000000 ;
+        width: 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    footer {
+        margin-top: 30px;
+    }
+    
+    .footer_p {
+        font-size: 14px;
+    }
+}

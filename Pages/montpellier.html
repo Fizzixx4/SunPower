@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SunPower | Nous Retrouver</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de l'entreprise SunPower, vendeur d'ombrière solaire pour la recharge de voiture électrique. Gestionnaire de projets liés à l'environnement et l'énergie solaire.">
+    <meta name="authors" content="Justine Ragues, Sadadi Assani, Grégory Koch">
+    <!-- Icones et styles -->
+    <link rel="icon" href="../Pictures/favicon.ico">
+    <link rel="stylesheet" href="../Assets/setup.css">
+    <link rel="stylesheet" href="../Assets/header.css">
+    <link rel="stylesheet" href="../Assets/footer.css">
+    <link rel="stylesheet" href="../Assets/style.css">
+    <link rel="stylesheet" href="../Assets/articles.css">
+    <link rel="stylesheet" href="../Assets/montpellier.css">
+     <link rel="stylesheet" href="../Assets/montpellier.css">
+    <!-- Imports svg -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <!-- Scripts -->
+    <script src="../main.js" defer></script>
+</head>
+<body>
+    <!----------HEADER---------->
+    <header>
+        <!---------- NAVBAR ---------->
+        <nav role="navigation">
+            <div id="navbar">
+                <!-- LOGO -->
+                <a href="../index.html" id="navbar_logo"><img src="../Pictures/LOGO.png" alt="Logo Sunpower"></a>
+                <!-- FIN LOGO -->
+
+                <!-- ICONE MENU BURGER -->
+                <button id="nav_bar_burger" aria-label="Menu">
+                    <ion-icon id="nav_bar_burger_icon" name="menu-outline"></ion-icon>
+                </button>
+                <!-- FIN ICONE MENU BURGER -->
+
+                <!-- NAV -->
+                <div class="navbar_dekstop">
+                    <ul id="navbar_liste">
+                        <li class="navbar_item"><a href="../index.html">Accueil</a></li>
+                        <li class="navbar_item"><a href="./ombrieres.html">Nos Ombrières</a></li>
+                        <li class="navbar_item"><a href="./activites.html">Nos Activités</a></li>
+                        <li class="navbar_item"><a href="./contact.html">Nous Contacter</a></li>
+                        <li><a href="./montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <!-- FIN NAV -->
+            </div>
+        </nav>
+        <!------------ FIN NAVBAR ------------>
+
+        <!------------ BANNER ---------->
+        <div id="banner">
+            <img src="../Pictures/Banniere_Montpellier.jpg" id="banner_img" alt="Image d'illustration">
+            <h1 id="banner_title">Montpellier</h1>
+        </div>
+        <!------------ FIN BANNER ---------->  
+    </header>
+    <!------------ FIN HEADER ---------->
+
+    <!------------ MAIN ---------->
+    <main>
+        <!------------ SECTION ------------>
+        <section class="article_2">
+            <h2>Retrouvez nos ombrières</h2>
+
+            <!-- MAP -->
+            <div class="mapouter">
+                <div class="gmap_canvas">
+                    <iframe id="gmap_canvas" src="https://www.google.com/maps/d/u/0/embed?mid=1PZGjtMjvVMefeLsFm8gbRJUQiDhRwnI&ehbc=2E312F"></iframe>
+                </div>
+            </div>
+            <!-- FIN MAP -->
+
+            <p class="art_description">Actuellement 4 implantations à Montpellier</p>
+
+            <hr>
+            
+            <h3>Vous avez un projet?</h3>
+
+            <div id="button">
+                <a class="button" href="./contact.html">Contactez-nous</a>
+            </div>
+        </section>
+        <!------------ FIN SECTION ------------>
+    </main>
+    <!------------ FIN MAIN ---------->
+
+    <!------------ FOOTER ---------->
+    <footer>
+        <!-- BLOC GAUCHE -->
+        <div class="footer_block">
+            <span id="footer_subtitle" class="footer_p">Contact</span>
+            <p class="footer_p">2 rue de l’innovation</p>
+            <p class="footer_p">38000 Grenoble</p>
+            <a href="tel:04.67.00.00.00" class="footer_p">04.67.00.00.00</a>
+            <a href="mailto:contact@sunpower.com" class="footer_p">contact@sunpower.com</a>
+        </div>
+        <!-- FIN BLOC GAUCHE -->
+    
+        <!-- BLOC CENTRAL -->
+        <div class="footer_block footer_block--secondary">
+            <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
+            <ul class="footer_icon">
+                <li class="icon"><a href="https://www.facebook.com/" target="_blank" aria-label="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.linkedin.com/" target="_blank" aria-label="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.youtube.com/" target="_blank" aria-label="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </div>
+        <!-- FIN BLOC CENTRAL -->
+    
+        <!-- BLOC DROIT -->
+        <div class="footer_block">
+            <p class="footer_p">ⓒsunpower 2013.</p>
+            <a href="./mention legale.html" id="footer_link" class="footer_p">mentions légales</a>
+        </div>
+        <!-- FIN BLOC DROIT -->
+    </footer>
+    <!------------ FIN FOOTER ---------->
+</body>
+
+</html>

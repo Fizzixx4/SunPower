@@ -1,0 +1,38 @@
+/* ------------ ARTICLE 1 ------------ */
+.art_picture {
+    width: 70%;
+}
+
+.art_description {
+    margin : 15px;
+}
+
+/* -------------------- REPONSIVE ARTICLE 1 --------------------  */
+@media (max-width: 649px) {
+    .art_picture{
+        transform: translateX(20%);
+    }
+}
+
+@media (min-width: 650px ) {
+    .article_1 {
+        width: 90%;
+        display: flex;
+        text-align: end;
+    }
+
+    .article_1--Secondary {
+        flex-direction: row-reverse;
+        text-align: start;
+    }
+
+    .art_picture {
+        width: 50vh;
+        object-fit: cover;
+    }
+}
+
+/* ------------ARTICLE 2------------ */
+.article_2{
+    text-align: center;
+}

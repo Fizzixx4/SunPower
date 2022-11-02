@@ -1,0 +1,29 @@
+#title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* BLOC DES 3 CONTACTS */
+.container_contact {
+    margin : 0 auto;
+    text-align: center;
+}
+
+/* CONTACT */
+.card_contact {
+    font-weight: bold;
+    margin: 0 20px 35px 20px;
+}
+
+/* --------------------RESPONSIVE-------------------- */
+@media (min-width: 650px) {
+   .container_contact {
+       display : flex;
+       justify-content: center;
+    }
+
+    .card_contact:hover{
+        transform: scale(1.1);
+    }
+}

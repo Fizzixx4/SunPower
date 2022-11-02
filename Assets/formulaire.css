@@ -1,0 +1,267 @@
+/* --TEXTE--*/
+#form_h2{
+    padding: 0 0 0 10px;
+}
+
+h3 {
+    padding-bottom: 0;
+}
+
+.form_p{
+    color: grey;
+    font-style: italic;
+    font-size: 11px;
+}
+
+#form_span{
+    color: grey;
+    font-style: italic;
+}
+
+.text-success {
+    opacity: 0;
+    font-size: 0px;
+}
+
+.text-danger {
+    color: red;
+    font-size: 9px;
+}
+
+/* --FORMULAIRE-- */
+form{
+    padding: 0 20px 0 15px;
+}
+
+.fieldset{
+    border: solid 1px #31B86B;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    border:0;
+    border-bottom: solid 1px #086375;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    width: 100%;
+    border: solid 1px #086375;
+}
+
+/*----INPUT FILE----*/
+.block_download {
+    bottom: 0;
+    position: relative;
+}
+
+.projet_fichier_input{
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    width: 150px;
+}
+
+.projet_fichier_input::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer; 
+    left: 0;
+    top: 0;   
+}
+
+.projet_fichier_label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 150px;
+    height: 27px;
+    background-color: #1DD3B0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+.projet_fichier_label ion-icon{
+    font-size: 20px;
+}
+
+.file_selection {
+    font-style: italic;
+    font-size: 12px;
+    color: #1DD3B0;
+}
+
+#text_input_file {
+    padding-bottom: 5px;
+}
+
+/*----BOUTON FIN DE PAGE----*/
+#container_button{
+    display: flex;
+    justify-content: space-around;
+}
+
+.annuler{
+    width: 150px;
+    color: #2c3e4a;
+    font-weight: bold;
+    text-align: end;
+    padding-right: 20px;
+}
+
+.button--Secondary{
+    margin: 0;
+    cursor: pointer;
+    width: 150px;
+}
+
+
+/* -------------------RESPONSIVE FORMULAIRE-------------------- */
+@media(min-width: 750px){
+    .flex-container1{
+        width: 100%;
+        display: flex;
+    }
+
+    .flex-container2{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .flex-container2:nth-child(2n+1){
+        padding-right: 25px;
+    }
+
+    .flex-container2:nth-child(2n){
+        padding-left: 25px;
+    }
+
+    #container_button{
+        justify-content: end;
+    }
+
+    #annuler{
+        margin-right: 30px;
+    }
+
+    /*----INPUT FILE----*/
+    .block_download{
+        display: flex;
+    }
+}
+
+/* -------------------------- MODAL ------------------------------- */
+
+/* -----MODAL------ */
+.overlay{
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal{
+    background-color: #fefefe;
+    border: 1px solid #31b86b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 70%;
+}
+
+.modal_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #31b86b3d;
+}
+
+#close {
+    color: red;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.modal_body{
+    height: calc(100% - 68px);
+    width: 100%;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+/* -----MODAL VALIDATION ANNULATION------ */
+.icone_modale{
+    font-size: 45px;
+    color: #31b86b;
+}
+
+.container_modale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.modal_valide {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal_content {
+    background-color: #fefefe;
+    border: 1px solid #31b86b;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 30%;
+}
+
+/* -----------------------------RESPONSIVE MODAL------------------------------ */
+@media (min-width: 650px) {
+    .modal {
+        width: 60%;
+        height: 80%;
+    }
+
+    .modal_body {
+        padding: 10px;
+    }
+
+    .modal_content {
+        width: 40%;
+    }
+} 
+
+@media (min-width: 1250px) {
+    .modal {
+        width: 50%;
+    }
+} 
