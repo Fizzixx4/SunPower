@@ -1,0 +1,86 @@
+/* ------PARTIE FONDATEURS------ */
+#container_fondateur{
+    margin: 20px 0 50px 0;
+}
+
+.fondateur{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.fondateur_image{
+    width: 60%;
+    border: solid 2px #086375;
+    border-radius: 20px;
+}
+
+/* ------ANIMATION------ */
+.car{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow-x: hidden;
+}
+
+#boite {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    animation-name: car_boite;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes car_boite {
+    0% {
+      left: -200px;
+    }
+    100% {
+      left: calc(100% + 100px);
+    }
+  }
+
+/* ------PARTIE PARTENAIRES------ */
+#container_partenaire{
+    margin: 30px 0 40px 0;
+}
+
+.partenaire_image{
+    display: flex;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.partenaire_image img{
+    border: dashed 1px #2C3E4A;
+    border-radius: 25px;
+    width: 80%;
+}
+
+/* ----------------------RESPONSIVE---------------------- */
+
+@media (min-width: 650px) {
+    /* ------PARTIE FONDATEURS------ */
+    #container_fondateur{
+        display: flex;
+        justify-content: center;
+        margin: 0px 70px;
+    }
+
+    .fondateur_image{
+        width: 90%;
+    }
+
+    /* ------PARTIE PARTENAIRES------ */
+    #container_partenaire{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .partenaire_image img{
+        width: 90%;
+        border-radius: 10px;
+    }
+}

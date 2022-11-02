@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>SunPower | Accueil</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site de l'entreprise SunPower, vendeur d'ombrière solaire pour la recharge de voiture électrique. Gestionnaire de projets liés à l'environnement et l'énergie solaire.">
+    <meta name="authors" content="Justine Ragues, Sadadi Assani, Grégory Koch">
+    <!-- Icones et styles -->
+    <link rel="icon" href="./Pictures/favicon.ico">
+    <link rel="stylesheet" href="./Assets/setup.css">
+    <link rel="stylesheet" href="./Assets/style.css">
+    <link rel="stylesheet" href="./Assets/header.css">
+    <link rel="stylesheet" href="./Assets/footer.css">
+    <link rel="stylesheet" href="./Assets/accueil.css">
+    <link rel="stylesheet" href="./Assets/articles.css">
+    <!-- Imports svg -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" defer></script>
+    <!-- Scripts -->
+    <script src="./main.js" defer></script>
+</head>
+
+<body>
+   <!----------HEADER---------->
+   <header>
+        <!---------- NAVBAR ---------->
+        <nav role="navigation">
+            <div id="navbar">
+                <!-- LOGO -->
+                <a href="./index.html" id="navbar_logo"><img src="./Pictures/LOGO.png" alt="Logo Sunpower"></a>
+                <!-- FIN LOGO -->
+
+                <!-- ICONE MENU BURGER -->
+                <button id="nav_bar_burger" aria-label="Menu">
+                    <ion-icon id="nav_bar_burger_icon" name="menu-outline"></ion-icon>
+                </button>
+                <!-- FIN ICONE MENU BURGER -->
+
+                <!-- NAV -->
+                <div class="navbar_dekstop">
+                    <ul id="navbar_liste">
+                        <li class="navbar_item active"><a href="./index.html">Accueil</a></li>
+                        <li class="navbar_item"><a href="./Pages/ombrieres.html">Nos Ombrières</a></li>
+                        <li class="navbar_item"><a href="./Pages/activites.html">Nos Activités</a></li>
+                        <li class="navbar_item"><a href="./Pages/contact.html">Nous Contacter</a></li>
+                        <li><a href="./Pages/montpellier.html" class="navbar_item navbar_item--Secondary"><ion-icon name="location-sharp"></ion-icon></a></li>
+                    </ul>
+                </div>
+                <!-- FIN NAV -->
+            </div>
+        </nav>
+        <!------------ FIN NAVBAR ------------>
+
+        <!------------ BANNER ---------->
+        <div id="banner">
+            <img src="./Pictures/Banniere_Principale.jpg" id="banner_img" alt="Image d'illustration">
+            <h1 id="banner_title">Roulez électrique : Chargez solaire</h1>
+        </div>
+        <!------------ FIN BANNER ---------->  
+    </header>
+    <!------------ FIN HEADER ---------->
+
+    <!------------ MAIN ---------->   
+    <main>
+        <!------------ SECTION 1 ---------->
+        <section class="article_2">
+            <h2>Qui sommes nous?</h2>
+
+            <p>Depuis sa fondation en 2013, la société Sunpower conçoit et commercialise des panneaux solaires à haut rendement. Dans le cadre de nos activités, nous avons développé des ombrières solaires pour la recharge des véhicules électriques. Ce projet est issu du démonstrateur Zen-E-DRIVE financé par l'ADEME.</p>
+        </section>
+        <div class="car">
+            <div id="boite"><img src="./Pictures/electric-car.png" alt="illustration de voiture éléctrique"></div>
+        </div>
+        
+        <section class="article_2">
+            <h3 class="art_description">Nos Fondateurs :</h3>
+
+            <div id="container_fondateur">
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Serge.jpg" alt="Illustration Serge Turing">
+                    <p>Serge Turing</p>
+                </div>
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Alex.jpg" alt="Illustration Alex Pareneinsten">
+                    <p>Alex Pareneinsten</p>
+                </div>
+                <div class="fondateur">
+                    <img class="fondateur_image" src="./Pictures/Hugo.jpg" alt="Illustration Hugo Oppenheimer">
+                    <p>Hugo Oppenheimer</p>
+                </div>
+            </div>
+        </section>
+        <!------------ FIN SECTION 1 ---------->
+
+        <!------------ SECTION 2 ---------->
+        <section class = "article_2">
+            <h2>Ils nous ont fait confiance !</h2>
+            
+            <p>Nous avons bénéficié d'une aide de 2M d'euros auprès de BPIFrance. En outre, nous avons réalisé une levée de fonds de 30M d'euros auprès d'un fond d'investissement privé.<br>Depuis 2015, nous collaborons avec l'INES pour la conception de panneaux solaires et avec le CEA pour la mise au point d'un accumulateur à haute densité d'énergie. Montpellier est dotée de 4 ombrières solaires avec 6 bornes de chargement chacunes et l'agglomération de Toulouse a engagé des démarches pour profiter de nos technologies.</p>
+            <div id="container_partenaire">
+                <div class="partenaire_image">
+                    <a href="https://www.ines-solaire.org/" target="_blank" ><img src="./Pictures/Logo_ines.jpg" alt="Logo Ines"></a>
+                    <a href="https://www.montpellier3m.fr/" target="_blank" ><img src="./Pictures/Logo_mtp.jpg" alt=" Logo Ville de Montpellier"></a>
+                </div>
+
+                <div class="partenaire_image">
+                    <a href="https://www.dpi-experience.fr/" target="_blank" ><img src="./Pictures/Logo_dpi.png" alt="Logo DPI"></a>
+                    <a href="https://www.cea.fr/" target="_blank" ><img src="./Pictures/Logo_cea.png" alt="Logo CEA"></a>
+                </div>
+            </div>
+        </section>
+        <!------------ FIN SECTION 2 ---------->
+    </main>
+    <!------------ FIN MAIN ---------->
+
+    <!------------ FOOTER ---------->
+    <footer>
+        <!-- BLOC GAUCHE -->
+        <div class="footer_block">
+            <span id="footer_subtitle" class="footer_p">Contact</span>
+            <p class="footer_p">2 rue de l’innovation</p>
+            <p class="footer_p">38000 Grenoble</p>
+            <a href="tel:04.67.00.00.00" class="footer_p">04.67.00.00.00</a>
+            <a href="mailto:contact@sunpower.com" class="footer_p">contact@sunpower.com</a>
+        </div>
+        <!-- FIN BLOC GAUCHE -->
+    
+        <!-- BLOC CENTRAL -->
+        <div class="footer_block footer_block--secondary">
+            <p id="footer_title">Retrouvez-nous sur les réseaux sociaux :</p>
+            <ul class="footer_icon">
+                <li class="icon"><a href="https://www.facebook.com/" target="_blank" aria-label="Lien vers Facebook"><ion-icon name="logo-facebook"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.linkedin.com/" target="_blank" aria-label="Lien vers Linkedin"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://www.youtube.com/" target="_blank" aria-label="Lien vers Youtube"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    
+                <li class="icon"><a href="https://twitter.com/" target="_blank" aria-label="Lien vers Twitter"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            </ul>
+        </div>
+        <!-- FIN BLOC CENTRAL -->
+    
+        <!-- BLOC DROIT -->
+        <div class="footer_block">
+            <p class="footer_p">ⓒsunpower 2013.</p>
+            <a href="./Pages/mention legale.html" id="footer_link" class="footer_p">mentions légales</a>
+        </div>
+        <!-- FIN BLOC DROIT -->
+    </footer>
+    <!------------ FIN FOOTER ---------->
+</body>
+
+</html>
